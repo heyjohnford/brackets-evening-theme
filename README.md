@@ -26,7 +26,7 @@ The naming of the Racket theme was considered solely based on the fact that it r
 
 # In closing
 
-Racket offers a fustration-free environment for you to author some of the best code you've ever conceived. It stays out of your way while allowing you to focus on what really matters.
+Racket offers a frustration-free environment for you to author some of the best code you've ever conceived. It stays out of your way while allowing you to focus on what really matters.
 
 Look at all that beautiful code!
 
