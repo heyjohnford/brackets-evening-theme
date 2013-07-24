@@ -58,7 +58,6 @@
 .cm-s-racket.CodeMirror {
   font-family: Menlo, 'SourceCodePro', 'Andale Mono', monospace !important;
   font-size: 14px;
-  line-height: 24px;
   background: #181818;
   color: #f9faf4;
 }
