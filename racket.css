@@ -2,7 +2,7 @@
 *    @URL http://www.github.com/johnamiahford/brackets-racket-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.1
+*    @version v0.1.2
 */
 
 /*--- Global styles ---*/
@@ -21,6 +21,16 @@
 }
 #working-set-header, #open-files-container {
   background: #333;
+}
+.sidebar-selection {
+  background: #2D2E30;
+  border-left: 2px solid #0D638A;
+}
+.sidebar-selection-triangle {
+  background: none;
+}
+.sidebar-selection-triangle.triangle-visible:before {
+  border-left-color: #2D2E30;
 }
 /* Bottom status bar */
 #status-bar {
@@ -65,9 +75,8 @@
   border-left: 1px solid #f8f8f0;
   z-index: 3;
 }
-.CodeMirror-selected {
-  background: #3d3d3d;
-  opacity: 0.20;
+.CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected {
+  background: rgba(13, 99, 138, 0.5);
 }
 .cm-s-racket .cm-keyword {
   color: #f9faf4;
@@ -127,9 +136,6 @@
 .cm-s-racket .cm-matchhighlight {
   background-color: rgba(61, 61, 61, 0.23);
 }
-.cm-s-racket .activeline {
-  background: rgba(33, 33, 33, 0.15);
-}
 .cm-s-racket span.CodeMirror-matchingbracket {
   color: #a7ec21;
   font-weight: bold;
@@ -140,8 +146,10 @@
   box-shadow: 0 0 0 1px #fff;
 }
 .cm-s-racket .CodeMirror-linenumber, .cm-s-racket .CodeMirror-gutters {
-  color: #727272;
+  color: #454545;
   background-color: #181818;
+  font-size: 0.9em;
+  padding-left: 0.3em;
 }
 .cm-s-racket span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext {
   background-color: #ffe69d;
@@ -159,4 +167,7 @@
 }
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
   background: #0D638A;
+}
+.CodeMirror-gutter-elt {
+  color: #747676;
 }
