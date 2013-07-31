@@ -2,7 +2,7 @@
 *    @URL http://www.github.com/johnamiahford/brackets-racket-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.1.4
+*    @version v0.1.5
 */
 
 /*--- Global styles ---*/
@@ -87,7 +87,7 @@
   color: #A4C261;
 }
 .cm-s-racket .cm-number {
-  color: #A4C261;
+  color: #66CB80;
 }
 .cm-s-racket .cm-def {
   color: #658AAF;
