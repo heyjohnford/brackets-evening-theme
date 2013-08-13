@@ -2,7 +2,7 @@
 *    @URL http://www.github.com/johnamiahford/brackets-racket-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.1.6
+*    @version v0.1.7
 */
 
 /*--- Global styles ---*/
@@ -31,15 +31,11 @@
 .sidebar-selection-triangle.triangle-visible:before {
   border-left-color: #2D2E30;
 }
-/* Bottom status bar */
+/* Status bar */
 #status-bar {
   background: #0D638A;
-  font-size: 13px;
-}
-/* Status bar text */
-#status-indicators, #status-info {
-  background: transparent;
   color: #f9faf4;
+  font-size: 1em;
 }
 #status-indicators {
   right: 1%;
@@ -59,14 +55,13 @@
 }
 /* Quick-edit styles */
 .inline-widget {
-  background:#3d3d3d;
 }
 
 /*--- CodeMirror styles ---*/
 .cm-s-racket.CodeMirror {
   font-family:'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, 'Andale Mono', monospace !important;
-  font-size: 13px;
-  background: #181818;
+  font-size: 100%;
+  background: #202020;
   color: #f9faf4;
 }
 .cm-s-racket pre {
@@ -148,7 +143,7 @@
 }
 .cm-s-racket .CodeMirror-linenumber, .cm-s-racket .CodeMirror-gutters {
   color: #454545;
-  background-color: #181818;
+  background-color: #202020;
   font-size: 0.9em;
   padding-left: 0.3em;
 }
@@ -162,13 +157,6 @@
 }
 
 /*--- Optional settings & extensions ---*/
-/* Vimbar style the "Normal mode" cursor and the status bar */
-#vimderbar {
-  background: #060606;
-}
-#vimderbar #confirm, #vimderbar #command-confirm {
-  color: #d85d5d;
-}
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
   background: #0D638A;
 }
