@@ -2,7 +2,7 @@
 *    @URL http://www.github.com/johnamiahford/brackets-racket-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.1.7
+*    @version v0.1.8
 */
 
 /*--- Global styles ---*/
@@ -157,9 +157,15 @@
 }
 
 /*--- Optional settings & extensions ---*/
+#editor-holder #not-editor {
+  background-color: #333;
+}
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
   background: #0D638A;
 }
 .CodeMirror-gutter-elt {
   color: #747676;
+}
+.CodeMirror-activeline-background {
+	background-color: rgba(55, 55, 55, 0.4) !important;
 }
