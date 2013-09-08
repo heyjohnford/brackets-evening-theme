@@ -2,10 +2,12 @@
 *    @URL http://www.github.com/johnamiahford/brackets-racket-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.1.8
+*    @version v0.2.0
+*    @notes - Based on the popular tomorrow_night theme
 */
 
-/*--- Global styles ---*/
+/* Global
+-----------*/
 /* Allow the editor view to scale the entire window */
 .main-view .content {
   max-width: 100%;
@@ -13,35 +15,35 @@
 }
 /* Sidebar */
 #sidebar, #project-files-header {
-  background: #222;
+  background: #282a2e;
 }
 #working-set-header, #project-files-header {
-  color: #658AAF;
+  color: #b294bb;
 }
 #working-set-header, #open-files-container {
-  background: #333;
+  background: #373b41;
+}
+#open-files-container li.selected a,
+#open-files-container li.selected .extension,
+.jstree-brackets li a.jstree-clicked,
+.jstree-brackets li a.jstree-clicked .extension {
+  color: #b294bb;
 }
 .sidebar-selection {
-  background: #2D2E30;
-  border-left: 2px solid #0D638A;
+  border-left: 2px solid #b294bb;
 }
-.sidebar-selection-triangle {
-  background: none;
-}
+.sidebar-selection-triangle,
 .sidebar-selection-triangle.triangle-visible:before {
-  border-left-color: #2D2E30;
+  background: none;
 }
 /* Status bar */
 #status-bar {
-  background: #0D638A;
-  color: #f9faf4;
+  background: #373b41;
+  color: #c5c8c6;
   font-size: 1em;
 }
 #status-indicators {
   right: 1%;
-}
-#status-file {
-  color: #6c97c1;
 }
 /* Quick nav toolbar icons */
 #main-toolbar {
@@ -55,79 +57,95 @@
 }
 /* Quick-edit styles */
 .inline-widget {
+  background-color: #373b41;
 }
-
-/*--- CodeMirror styles ---*/
+.related-container {
+  background-color: #373b41;
+}
+.inline-widget .CodeMirror-scroll .CodeMirror-linenumbers {
+  background: none;
+}
+.related-container .selection {
+  background: #c5c8c6;
+  border: none;
+  top: 0;
+}
+.related-container .selection:before {
+  content: none;
+}
+.related-container .related ul {
+  padding: 0 0 12px 0;
+}
+/* CodeMirror styles
+---------------------*/
 .cm-s-racket.CodeMirror {
-  font-family:'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, 'Andale Mono', monospace !important;
+  font-family: 'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, 'Andale Mono', monospace !important;
   font-size: 100%;
-  background: #202020;
-  color: #f9faf4;
+  background: #1f2529;
+  color: #c5c8c6;
+}
+.CodeMirror pre {
+  padding-left: 0.4em;
 }
 .cm-s-racket pre {
   line-height: 1.4;
 }
 .cm-s-racket div.CodeMirror-cursor {
-  border-left: 1px solid #f8f8f0;
+  border-left: 1px solid #c5c8c6;
   z-index: 3;
 }
 .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected {
   background: rgba(13, 99, 138, 0.5);
 }
 .cm-s-racket .cm-keyword {
-  color: #f9faf4;
-  font-weight: 600;
+  color: #b294bb;
 }
 .cm-s-racket .cm-atom {
-  color: #A4C261;
+  color: #b5bd68;
 }
 .cm-s-racket .cm-number {
-  color: #66CB80;
+  color: #de935f;
 }
 .cm-s-racket .cm-def {
-  color: #658AAF;
+  color: #81a2be;
 }
-.cm-s-racket .cm-variable {
-  color: #CB666B;
-}
-.cm-s-racket .cm-variable-2 {
-  color: #CB666B;
-}
+.cm-s-racket .cm-variable,
+.cm-s-racket .cm-variable-2,
 .cm-s-racket .cm-variable-3 {
-  color: #CB666B;
+  color: #de935f;
 }
 .cm-s-racket .cm-property {
-  color: #658AAF;
+  color: #c5c8c6;
 }
 .cm-s-racket .cm-operator {
-  color: #f9faf4;
+  color: #8abeb7;
 }
 .cm-s-racket .cm-comment {
-  color: #747676;
+  color: #969896;
 }
 .cm-s-racket .cm-string {
-  color: #A4C261;
+  color: #b5bd68;
 }
 .cm-s-racket .cm-string-2 {
-  color: #c48cff;
+  color: #b294bb;
 }
 .cm-s-racket .cm-meta {
-  color: #D8B778;
+  color: #f0c674;
 }
 .cm-s-racket .cm-qualifier, .CodeMirror span.cm-builtin {
-  color: #f9faf4;
+  color: #81a2be;
 }
 .cm-s-racket .cm-bracket {
-  color: #f9faf4;
+  color: #c5c8c6;
 }
 .cm-s-racket .cm-tag {
-  color: #658AAF;
+  color: #81a2be;
 }
 .cm-s-racket .cm-attribute {
-  color: #658AAF;
+  color: #81a2be;
 }
 .cm-s-racket .cm-error {
-  color: #d85d5d;
+  color: #cc6666;
 }
 .cm-s-racket .cm-matchhighlight {
   background-color: rgba(61, 61, 61, 0.23);
@@ -141,11 +159,18 @@
   background: none;
   box-shadow: 0 0 0 1px #fff;
 }
+.CodeMirror .CodeMirror-linenumbers {
+  width: 35px;
+}
+.cm-s-racket .CodeMirror-linenumber {
+  left: 0 !important;
+}
 .cm-s-racket .CodeMirror-linenumber, .cm-s-racket .CodeMirror-gutters {
-  color: #454545;
-  background-color: #202020;
+  color: #666;
+  background-color: #1f2529;
   font-size: 0.9em;
-  padding-left: 0.3em;
+  padding-left: 0.8em;
+  width: auto !important;
 }
 .cm-s-racket .CodeMirror-foldmarker {
   background: #747676;
@@ -156,16 +181,23 @@
   color: #242424;
 }
 
-/*--- Optional settings & extensions ---*/
+/* Optional settings & extensions
+----------------------------------*/
 #editor-holder #not-editor {
   background-color: #333;
 }
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
-  background: #0D638A;
+  background: #b5bd68;
 }
 .CodeMirror-gutter-elt {
-  color: #747676;
+  color: #666;
+  left: 38px;
 }
+.CodeMirror-activeline .CodeMirror-linenumber,
+.CodeMirror-activeline .CodeMirror-gutter-elt,
 .CodeMirror-activeline-background {
-	background-color: rgba(55, 55, 55, 0.4) !important;
+	background-color: rgba(40, 42, 46, 0.9) !important;
+}
+.cm-lkcampbell-indent-guides {
+  border-left: 1px dotted rgba(140, 142, 146, 0.25);
 }
