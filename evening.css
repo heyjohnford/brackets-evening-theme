@@ -2,7 +2,7 @@
 *    @URL http://www.github.com/johnamiahford/brackets-evening-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.2.1
+*    @version v0.2.2
 *    @notes - Based on the popular tomorrow_night theme
 */
 
@@ -15,30 +15,33 @@
 }
 /* Sidebar */
 #sidebar, #project-files-header {
-  background: #282a2e;
+  background: #1f282e;
 }
 #working-set-header, #project-files-header {
-  color: #b294bb;
+  color: #81a2be;
 }
 #working-set-header, #open-files-container {
-  background: #373b41;
+  background: #3f4955;
 }
 #open-files-container li.selected a,
 #open-files-container li.selected .extension,
 .jstree-brackets li a.jstree-clicked,
 .jstree-brackets li a.jstree-clicked .extension {
-  color: #b294bb;
+  color: #81a2be;
 }
 .sidebar-selection {
-  border-left: 2px solid #b294bb;
+  background: #2e343c;
+  border-left: 4px solid #81a2be;
 }
-.sidebar-selection-triangle,
-.sidebar-selection-triangle.triangle-visible:before {
+.sidebar-selection-triangle {
   background: none;
+}
+.sidebar-selection-triangle.triangle-visible {
+  display: none !important; 
 }
 /* Status bar */
 #status-bar {
-  background: #373b41;
+  background: #2e343c;
   color: #c5c8c6;
   font-size: 1em;
 }
@@ -57,10 +60,10 @@
 }
 /* Quick-edit styles */
 .inline-widget {
-  background-color: #373b41;
+  background-color: #2e343c;
 }
 .related-container {
-  background-color: #373b41;
+  background-color: #2e343c;
 }
 .inline-widget .CodeMirror-scroll .CodeMirror-linenumbers {
   background: none;
@@ -81,14 +84,15 @@
 .cm-s-evening.CodeMirror {
   font-family: 'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, 'Andale Mono', monospace !important;
   font-size: 100%;
-  background: #1f2529;
+  background: #232C31;
   color: #c5c8c6;
 }
 .CodeMirror pre {
   padding-left: 0.4em;
 }
 .cm-s-evening pre {
-  line-height: 1.4;
+  font-size: 0.975em;
+  line-height: 1.3975;
 }
 .cm-s-evening div.CodeMirror-cursor {
   border-left: 1px solid #c5c8c6;
@@ -154,10 +158,12 @@
   color: #a7ec21;
   font-weight: bold;
 }
-.cm-s-evening span.CodeMirror-searching {
-  background-color: none;
-  background: none;
-  box-shadow: 0 0 0 1px #fff;
+.cm-s-evening .CodeMirror-searching {
+  background-color: #ffe69d !important;
+  color: #242424;
+/*  box-shadow: 0 0 0 1px #fff;*/
+}
+.cm-s-evening .CodeMirror-searching.CodeMirror-selectedtext {
 }
 .CodeMirror .CodeMirror-linenumbers {
   width: 35px;
@@ -167,7 +173,7 @@
 }
 .cm-s-evening .CodeMirror-linenumber, .cm-s-evening .CodeMirror-gutters {
   color: #666;
-  background-color: #1f2529;
+  background-color: #232C31;
   font-size: 0.9em;
   padding-left: 0.8em;
   width: auto !important;
@@ -176,15 +182,10 @@
   background: #747676;
   border: none;
 }
-.cm-s-evening span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext {
-  background-color: #ffe69d;
-  color: #242424;
-}
-
 /* Optional settings & extensions
 ----------------------------------*/
 #editor-holder #not-editor {
-  background-color: #333;
+  background-color: #232C31;
 }
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
   background: #b5bd68;
@@ -196,7 +197,7 @@
 .CodeMirror-activeline .CodeMirror-linenumber,
 .CodeMirror-activeline .CodeMirror-gutter-elt,
 .CodeMirror-activeline-background {
-	background-color: rgba(40, 42, 46, 0.9) !important;
+	background-color: rgba(140, 142, 146, 0.1) !important;
 }
 .cm-lkcampbell-indent-guides {
   border-left: 1px dotted rgba(140, 142, 146, 0.25);
