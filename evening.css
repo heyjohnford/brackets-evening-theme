@@ -2,8 +2,8 @@
 *    @URL http://www.github.com/johnamiahford/brackets-evening-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.2.2
-*    @notes - Based on the popular tomorrow_night theme
+*    @version v0.2.3
+*
 */
 
 /* Global
@@ -15,23 +15,24 @@
 }
 /* Sidebar */
 #sidebar, #project-files-header {
-  background: #1f282e;
+  background: #2a2929;
 }
 #working-set-header, #project-files-header {
-  color: #81a2be;
+  color: #fcfcfc;
 }
 #working-set-header, #open-files-container {
-  background: #3f4955;
+  background: #383636;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 #open-files-container li.selected a,
 #open-files-container li.selected .extension,
 .jstree-brackets li a.jstree-clicked,
 .jstree-brackets li a.jstree-clicked .extension {
-  color: #81a2be;
+  color: #fcfcfc;
 }
 .sidebar-selection {
-  background: #2e343c;
-  border-left: 4px solid #81a2be;
+  background: #211f1f;
+  border-left: 4px solid #A4C261;
 }
 .sidebar-selection-triangle {
   background: none;
@@ -41,8 +42,8 @@
 }
 /* Status bar */
 #status-bar {
-  background: #2e343c;
-  color: #c5c8c6;
+  background: #383636;
+  color: #fcfcfc;
   font-size: 1em;
 }
 #status-indicators {
@@ -69,7 +70,7 @@
   background: none;
 }
 .related-container .selection {
-  background: #c5c8c6;
+  background: #fcfcfc;
   border: none;
   top: 0;
 }
@@ -82,74 +83,74 @@
 /* CodeMirror styles
 ---------------------*/
 .cm-s-evening.CodeMirror {
-  font-family: 'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, 'Andale Mono', monospace !important;
+  font-family: 'Meslo LG S', 'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, monospace !important;
   font-size: 100%;
-  background: #232C31;
-  color: #c5c8c6;
+  background: #1E1E1E;
+  color: #fcfcfc;
 }
 .CodeMirror pre {
   padding-left: 0.4em;
 }
 .cm-s-evening pre {
-  font-size: 0.975em;
-  line-height: 1.3975;
+  font-size: 1em;
+  line-height: 1.5;
 }
 .cm-s-evening div.CodeMirror-cursor {
-  border-left: 1px solid #c5c8c6;
+  border-left: 1px solid #fcfcfc;
   z-index: 3;
 }
 .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected {
   background: rgba(13, 99, 138, 0.5);
 }
 .cm-s-evening .cm-keyword {
-  color: #b294bb;
+  color: #C87936;
 }
 .cm-s-evening .cm-atom {
-  color: #b5bd68;
+  color: #A4C261;
 }
 .cm-s-evening .cm-number {
-  color: #de935f;
+  color: #D8B778;
 }
 .cm-s-evening .cm-def {
-  color: #81a2be;
+  color: #658AAF;
 }
 .cm-s-evening .cm-variable,
 .cm-s-evening .cm-variable-2,
 .cm-s-evening .cm-variable-3 {
-  color: #de935f;
+  color: #CB666B;
 }
 .cm-s-evening .cm-property {
-  color: #c5c8c6;
+  color: #fcfcfc;
 }
 .cm-s-evening .cm-operator {
-  color: #8abeb7;
+  color: #fcfcfc;
 }
 .cm-s-evening .cm-comment {
-  color: #969896;
+  color: #6A5A3C;
 }
 .cm-s-evening .cm-string {
-  color: #b5bd68;
+  color: #A4C261;
 }
 .cm-s-evening .cm-string-2 {
-  color: #b294bb;
+  color: #C87936;
 }
 .cm-s-evening .cm-meta {
   color: #f0c674;
 }
 .cm-s-evening .cm-qualifier, .CodeMirror span.cm-builtin {
-  color: #81a2be;
+  color: #658AAF;
 }
 .cm-s-evening .cm-bracket {
-  color: #c5c8c6;
+  color: #fcfcfc;
 }
 .cm-s-evening .cm-tag {
-  color: #81a2be;
+  color: #658AAF;
 }
 .cm-s-evening .cm-attribute {
-  color: #81a2be;
+  color: #658AAF;
 }
 .cm-s-evening .cm-error {
-  color: #cc6666;
+  color: #AB2A1D;
 }
 .cm-s-evening .cm-matchhighlight {
   background-color: rgba(61, 61, 61, 0.23);
@@ -161,7 +162,7 @@
 .cm-s-evening .CodeMirror-searching {
   background-color: #ffe69d !important;
   color: #242424;
-/*  box-shadow: 0 0 0 1px #fff;*/
+  /*box-shadow: 0 0 0 1px #fff;*/
 }
 .cm-s-evening .CodeMirror-searching.CodeMirror-selectedtext {
 }
@@ -173,7 +174,7 @@
 }
 .cm-s-evening .CodeMirror-linenumber, .cm-s-evening .CodeMirror-gutters {
   color: #666;
-  background-color: #232C31;
+  background-color: #1E1E1E;
   font-size: 0.9em;
   padding-left: 0.8em;
   width: auto !important;
@@ -185,10 +186,10 @@
 /* Optional settings & extensions
 ----------------------------------*/
 #editor-holder #not-editor {
-  background-color: #232C31;
+  background-color: #1E1E1E;
 }
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
-  background: #b5bd68;
+  background: #A4C261;
 }
 .CodeMirror-gutter-elt {
   color: #666;
