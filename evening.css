@@ -2,7 +2,7 @@
 *    @URL http://www.github.com/johnamiahford/brackets-evening-theme
 *    @developer John Amiah Ford
 *    @license MIT
-*    @version v0.2.3
+*    @version v0.2.4
 *
 */
 
@@ -15,7 +15,7 @@
 }
 /* Sidebar */
 #sidebar, #project-files-header {
-  background: #2a2929;
+  background: #2e343c;
 }
 #working-set-header, #project-files-header {
   color: #fcfcfc;
@@ -31,7 +31,7 @@
   color: #fcfcfc;
 }
 .sidebar-selection {
-  background: #211f1f;
+  background: rgba(33, 31, 31, 0.6);
   border-left: 4px solid #A4C261;
 }
 .sidebar-selection-triangle {
@@ -85,7 +85,7 @@
 .cm-s-evening.CodeMirror {
   font-family: 'Meslo LG S', 'Bitstream Vera Sans Mono', 'SourceCodePro', Menlo, monospace !important;
   font-size: 100%;
-  background: #1E1E1E;
+  background: #252525;
   color: #fcfcfc;
 }
 .CodeMirror pre {
@@ -93,7 +93,7 @@
 }
 .cm-s-evening pre {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.475;
 }
 .cm-s-evening div.CodeMirror-cursor {
   border-left: 1px solid #fcfcfc;
@@ -150,7 +150,7 @@
   color: #658AAF;
 }
 .cm-s-evening .cm-error {
-  color: #AB2A1D;
+  color: #CB666B;
 }
 .cm-s-evening .cm-matchhighlight {
   background-color: rgba(61, 61, 61, 0.23);
@@ -174,7 +174,7 @@
 }
 .cm-s-evening .CodeMirror-linenumber, .cm-s-evening .CodeMirror-gutters {
   color: #666;
-  background-color: #1E1E1E;
+  background-color: #252525;
   font-size: 0.9em;
   padding-left: 0.8em;
   width: auto !important;
@@ -186,7 +186,7 @@
 /* Optional settings & extensions
 ----------------------------------*/
 #editor-holder #not-editor {
-  background-color: #1E1E1E;
+  background-color: #252525;
 }
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
   background: #A4C261;
